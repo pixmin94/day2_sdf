@@ -30,8 +30,7 @@ public class BankAccount {
     // deposit method
     public void deposit(float amount) {
         if (isClosed) {
-            throw new IllegalArgumentException(
-                    "Account closed/inactive. You cannot make a deposit to a closes/inactive account.");
+            throw new IllegalArgumentException( "Account closed/inactive. You cannot make a deposit to a closes/inactive account.");
         }
 
         if (amount < 0) {
